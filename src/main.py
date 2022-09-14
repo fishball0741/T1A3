@@ -8,6 +8,8 @@ Hunter = zombie.Boss('LV.2_Hunter', health=150, attack= 20)
 Witch = zombie.Boss('LV.3_Witch', health=250, attack=25)
 Tank = zombie.Boss('Final_Tank', health=350, attack=30)
 
+
+currentGame = zombie.game()
 battle = [male, Boomer]
 
 # print(male.__dict__)
@@ -17,7 +19,8 @@ battle = [male, Boomer]
 # print(Hunter.__dict__)
 # print(Witch.__dict__)
 # print(Tank.__dict__)
-currentGame = game()
+
+
 
 
 print(Boomer.__dict__)
