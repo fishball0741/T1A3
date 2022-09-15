@@ -1,3 +1,5 @@
+import random
+
 class Item:
     def __init__(self, weapon, gear, potions=50):
         self.weapon = weapon
@@ -11,17 +13,23 @@ class Character:
         self.health = health
         self.attack = attack
 
+    # def hit(self):
+    #     dmg = random.randint(0, 10)
+    #     self.health -= dmg
+
     def damage(self, Boss):
-        points = Boss(self.attack)
+        points = random.randint(0, Boss.attack)
         self.health -= points
+        return self.health
 
 class Boss(Character):
     def __init__(self, name, health=100, attack=10):
         super().__init__(name, health=health, attack=attack)
     
     def damage(self, Character):
-        points = Character(self.attack)
+        points = Character.attack
         self.health -= points
+        return self.health
 
 
 class game:

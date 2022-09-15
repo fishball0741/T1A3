@@ -1,4 +1,7 @@
 import zombie
+import random
+
+
 
 male = zombie.Character('Raymond', health=130, attack=10)
 female = zombie.Character('Becky', health=90, attack=20)
@@ -10,8 +13,8 @@ Tank = zombie.Boss('Final_Tank', health=350, attack=30)
 
 
 currentGame = zombie.game()
-battle = [male, Boomer]
 
+battle = [male, female, Boomer, Hunter, Witch, Tank]
 # print(male.__dict__)
 # print(female.__dict__)
 # print(item.__dict__)
@@ -23,4 +26,4 @@ battle = [male, Boomer]
 
 
 
-print(Boomer.__dict__)
+# print(Boomer.__dict__)
