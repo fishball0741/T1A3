@@ -23,7 +23,7 @@ battle = [male, female, Boomer, Hunter, Witch, Tank]
 # print(Witch.__dict__)
 # print(Tank.__dict__)
 
-
+print(f'Boomer got hit and still have {Boomer.damage(Tank)} hp left.')
 
 
 # print(Boomer.__dict__)

@@ -27,7 +27,7 @@ class Boss(Character):
         super().__init__(name, health=health, attack=attack)
     
     def damage(self, Character):
-        points = Character.attack
+        points = random.randint(0, Character.attack)
         self.health -= points
         return self.health
 
