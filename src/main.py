@@ -1,6 +1,6 @@
 import zombie
 import random
-
+import Choose
 
 
 male = zombie.Character('Raymond', health=130, attack=10)
@@ -28,20 +28,21 @@ boss_attack = [Boomer.attack, Hunter.attack, Witch.attack, Tank.attack]
 # print(Tank.__dict__)
 
 # print(f'Boomer got hit and still have {Boomer.damage(Tank)} hp left.')
-while player_health <= 0 and boss_health <= 0:
-    player_dmg = random.randint(10, player_attack)
-    boss_dmg = random.randint(0, boss_attack)
-    if player_health > 0:
-        boss_health -= player_dmg
-        print(f'Boomer got hit and still have {boss_health} hp left.')
-    elif boss_health > 0:
-        player_health -= boss_dmg
-        print(f'Male got hit and still have {player_health} hp left.')
-if player_health > 0 and boss_health <= 0:
-    win = True
-    print('Congrat, you WON !!! ')
-elif player_health <= 0 and boss_health > 0:
-    print('GAME OVER!!!')
+
+# while player_health <= 0 and boss_health <= 0:
+#     player_dmg = random.randint(10, player_attack)
+#     boss_dmg = random.randint(0, boss_attack)
+#     if player_health > 0:
+#         boss_health -= player_dmg
+#         print(f'Boomer got hit and still have {boss_health} hp left.')
+#     elif boss_health > 0:
+#         player_health -= boss_dmg
+#         print(f'Male got hit and still have {player_health} hp left.')
+# if player_health > 0 and boss_health <= 0:
+#     win = True
+#     print('Congrat, you WON !!! ')
+# elif player_health <= 0 and boss_health > 0:
+#     print('GAME OVER!!!')
 
 
 
