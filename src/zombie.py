@@ -1,4 +1,3 @@
-import random
 
 class Item:
     def __init__(self, weapon, gear, potions=50):
@@ -13,23 +12,20 @@ class Character:
         self.health = health
         self.attack = attack
 
-    # def hit(self):
-    #     dmg = random.randint(0, 10)
-    #     self.health -= dmg
 
-    def damage(self, Boss):
-        points = random.randint(0, Boss.attack)
-        self.health -= points
-        return self.health
+    # def damage(self, Boss):
+    #     points = random.randint(0, Boss.attack)
+    #     self.health -= points
+    #     return self.health
 
 class Boss(Character):
     def __init__(self, name, health=100, attack=10):
         super().__init__(name, health=health, attack=attack)
     
-    def damage(self, Character):
-        points = random.randint(0, Character.attack)
-        self.health -= points
-        return self.health
+    # def damage(self, Character):
+    #     points = random.randint(0, Character.attack)
+    #     self.health -= points
+    #     return self.health
 
 
 class game:
@@ -51,3 +47,4 @@ class game:
         elif Character.health < 1 and Boss.health < 1:
             self.gameOver = True
             print('Draw...But you still lose~~')
+
