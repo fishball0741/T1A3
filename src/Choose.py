@@ -3,13 +3,15 @@ import zombie
 
 
 
-male = zombie.Character('Raymond', health=130, attack=10)
-female = zombie.Character('Becky', health=90, attack=20)
+# male = zombie.Character('Raymond', health=130, attack=10)
+# female = zombie.Character('Becky', health=90, attack=20)
 
 
 def choose_character():
     
     while True:
+        male = zombie.Character('Raymond', health=130, attack=10)
+        female = zombie.Character('Becky', health=90, attack=20)
         gender = input("Please select your character, 'male' or 'female'? ")
     
         if gender == 'male':
@@ -25,4 +27,4 @@ def choose_character():
     # next_level()
 
 
-choose_character()
+# choose_character()

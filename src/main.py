@@ -1,23 +1,21 @@
 import zombie
-import random
 import Choose
+import battle
+
+# male = zombie.Character('Raymond', health=130, attack=10)
+# female = zombie.Character('Becky', health=90, attack=20)
+# item = zombie.Item('AK-47', 'Lv.3 Shield', 50)
+# Boomer = zombie.Boss('LV.1_Boomer', health=200, attack=6)
+# Hunter = zombie.Boss('LV.2_Hunter', health=150, attack= 20)
+# Witch = zombie.Boss('LV.3_Witch', health=250, attack=25)
+# Tank = zombie.Boss('Final_Tank', health=350, attack=30)
 
 
-male = zombie.Character('Raymond', health=130, attack=10)
-female = zombie.Character('Becky', health=90, attack=20)
-item = zombie.Item('AK-47', 'Lv.3 Shield', 50)
-Boomer = zombie.Boss('LV.1_Boomer', health=200, attack=6)
-Hunter = zombie.Boss('LV.2_Hunter', health=150, attack= 20)
-Witch = zombie.Boss('LV.3_Witch', health=250, attack=25)
-Tank = zombie.Boss('Final_Tank', health=350, attack=30)
-
-
-currentGame = zombie.game()
-player_health = [male.health, female.health]
-player_attack = [male.attack, female.attack]
-boss_health = [Boomer.health, Hunter.health, Witch.health, Tank.health]
-boss_attack = [Boomer.attack, Hunter.attack, Witch.attack, Tank.attack]
-# battle = [male, female, Boomer, Hunter, Witch, Tank]
+# currentGame = zombie.game()
+# player_health = [male.health, female.health]
+# player_attack = [male.attack, female.attack]
+# boss_health = [Boomer.health, Hunter.health, Witch.health, Tank.health]
+# boss_attack = [Boomer.attack, Hunter.attack, Witch.attack, Tank.attack]
 
 # print(male.__dict__)
 # print(female.__dict__)
@@ -44,6 +42,9 @@ boss_attack = [Boomer.attack, Hunter.attack, Witch.attack, Tank.attack]
 # elif player_health <= 0 and boss_health > 0:
 #     print('GAME OVER!!!')
 
+def new_game():
+    Choose.choose_character()
+    battle.play_game()
 
-
-# print(Boomer.__dict__)
+def next_level():
+    battle.play_game()
