@@ -1,6 +1,5 @@
-import zombie
 import Choose
-import battle
+import battle1
 
 # male = zombie.Character('Raymond', health=130, attack=10)
 # female = zombie.Character('Becky', health=90, attack=20)
@@ -44,7 +43,8 @@ import battle
 
 def new_game():
     Choose.choose_character()
-    battle.play_game()
+    battle1.first_game()
 
 def next_level():
-    battle.play_game()
+    battle1.first_game()
+
