@@ -7,15 +7,16 @@ class Item:
 
 # Human > male and female
 class Character:
-    def __init__(self, name, health=100, attack=10):
+    def __init__(self, name, health=100, attack=10, score=0):
         self.name = name
         self.health = health
         self.attack = attack
+        self.score = score
 
 
-class Boss(Character):
-    def __init__(self, name, health=100, attack=10):
-        super().__init__(name, health=health, attack=attack)
+# class Boss(Character):
+#     def __init__(self, name, health=100, attack=10):
+#         super().__init__(name, health=health, attack=attack)
 
 
 

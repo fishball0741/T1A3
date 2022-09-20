@@ -1,5 +1,6 @@
 import Choose
 import battle1
+import zombie
 
 # male = zombie.Character('Raymond', health=130, attack=10)
 # female = zombie.Character('Becky', health=90, attack=20)
@@ -9,37 +10,19 @@ import battle1
 # Witch = zombie.Boss('LV.3_Witch', health=250, attack=25)
 # Tank = zombie.Boss('Final_Tank', health=350, attack=30)
 
+def main():
+    # define all the boss
+    lv1_boss = zombie.Character('Boomer', health=200, attack=6, score=1)
+    lv2_boss = zombie.Character('Hunter', health=150, attack=20, score=2)
+    lv3_boss = zombie.Character('Witch', health=250, attack=25, score=3)
+    lv4_boss = zombie.Character('Tank', health=350, attack=30, score=4)
+    
+    # execute the character chose, save
+    user = Choose.choose_character()
 
-# currentGame = zombie.game()
-# player_health = [male.health, female.health]
-# player_attack = [male.attack, female.attack]
-# boss_health = [Boomer.health, Hunter.health, Witch.health, Tank.health]
-# boss_attack = [Boomer.attack, Hunter.attack, Witch.attack, Tank.attack]
+    
 
-# print(male.__dict__)
-# print(female.__dict__)
-# print(item.__dict__)
-# print(Boomer.__dict__)
-# print(Hunter.__dict__)
-# print(Witch.__dict__)
-# print(Tank.__dict__)
 
-# print(f'Boomer got hit and still have {Boomer.damage(Tank)} hp left.')
-
-# while player_health <= 0 and boss_health <= 0:
-#     player_dmg = random.randint(10, player_attack)
-#     boss_dmg = random.randint(0, boss_attack)
-#     if player_health > 0:
-#         boss_health -= player_dmg
-#         print(f'Boomer got hit and still have {boss_health} hp left.')
-#     elif boss_health > 0:
-#         player_health -= boss_dmg
-#         print(f'Male got hit and still have {player_health} hp left.')
-# if player_health > 0 and boss_health <= 0:
-#     win = True
-#     print('Congrat, you WON !!! ')
-# elif player_health <= 0 and boss_health > 0:
-#     print('GAME OVER!!!')
 
 def new_game():
     Choose.choose_character()
