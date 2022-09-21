@@ -14,12 +14,13 @@ def win_game(user: zombie.Character):
     user_input= input("Do you want to go the next level? 'yes' or 'no' ")
     if(user_input == "yes"):
         user.score += 1
-        user.health += 20
+        user.max_health += 20
         user.attack += 10
+        user.health = user.max_health
         print(f'You now are level up, your health is {user.health} and your attack is {user.attack} ')
 
 def game(boss: zombie.Character, user: zombie.Character):
-    print(f'the boss name is {boss.name} who has {boss.health} hp and {boss.attack} dmg, GOOD LUCK!! ')
+    print(f"the boss name is {boss.name} who has {boss.health} hp and {boss.attack} dmg, GOOD LUCK and LET's FIGHT!!! ")
     while True:
         if user.health > 0 and boss.health > 0:
             user.health -= random.randint(0, boss.attack)
