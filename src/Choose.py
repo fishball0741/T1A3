@@ -18,11 +18,11 @@ def choose_character():
         name = input("Please write down your character's name: ")
     
         if gender == 'male':
-            user = zombie.Character(name, health=130, attack=10, score=0, max_health=130)
+            user = zombie.Character(name, health=130, attack=10, score=0, max_health=130, max_attack=10)
             print(f'Hi, {name}, your health is {user.health} and attack is {user.attack}. ')
             break
         elif gender == 'female':
-            user = zombie.Character(name, health=90, attack=20, score=0, max_health=90)
+            user = zombie.Character(name, health=90, attack=20, score=0, max_health=90, max_attack=20)
             print(f'Hi, {user.name}, your health is {user.health} and attack is {user.attack}.')
             break
         else:
