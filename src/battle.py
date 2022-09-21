@@ -12,6 +12,10 @@ def end_game():
     user_input= input("Do you want to start a new game? 'yes' or 'no' ")
     if(user_input == "yes"):
         main.main()
+    elif (user_input == "no"):
+            print("Thanks for playing, see you next time :)")
+            great_text("BYEBYE","yellow","smslant")            
+            exit()
     else:
         print("Please typr the correct answer, 'yes' or 'no' ? ")        
 
@@ -31,7 +35,8 @@ def win_game(user: zombie.Character):
             user.score += 1
             break
         elif (user_input == "no"):
-            print("Thanks for playing, see you next time:)")
+            print("Thanks for playing, see you next time :)")
+            great_text("BYEBYE","yellow","smslant")
             exit()
         else:
             print("Please type the correct answer, 'yes' or 'no' ? ")
@@ -54,9 +59,6 @@ def game(boss: zombie.Character, user: zombie.Character):
         elif boss.health <= 0:
             win_game(user)
             break
-        
-def final():
-    game()
 
 
 
