@@ -31,7 +31,8 @@ def main():
         
     if user.score >= 3:
         battle.game(lv4_boss, user)
-             
+        exit()
+
 
 
 
