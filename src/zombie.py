@@ -1,7 +1,3 @@
-# class Item:
-#     def __init__(self, weapon, gear):
-#         self.weapon = weapon
-#         self.gear = gear
 # Human > male and female
 class Character:
     def __init__(self, name, health=100, attack=10, score=0, max_health=100, max_attack=10):
@@ -11,11 +7,4 @@ class Character:
         self.score = score
         self.max_health = max_health
         self.max_attack = max_attack
-
-
-# class Boss(Character):
-#     def __init__(self, name, health=100, attack=10):
-#         super().__init__(name, health=health, attack=attack)
-
-
 
