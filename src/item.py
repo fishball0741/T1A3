@@ -14,12 +14,12 @@ def item(user: zombie.Character):
                 break
             if number == 2:
                 number = user.max_health
-                user.max_health += 1
+                user.max_health += 10
                 user.health = user.max_health
                 print(f"Congrat, you found a helmet and your gain your health to {user.health} now. ")
                 break
             if number == 3:
-                print("Sorry, you got a empty box, someone already took the thing inside. ")
+                print("Sorry, you got an empty box, inventories have been taken by someone. ")
                 break
             if number == 4:
                 number = user.max_attack
@@ -31,7 +31,7 @@ def item(user: zombie.Character):
                 number = user.max_health
                 user.max_health += 20
                 user.health = user.max_health
-                print(f"Congrat, you found bullet-proof vest and your gain your health to {user.health} now. ")
+                print(f"Congrat, you found bullet-proof vest and you gain your health to {user.health} now. ")
                 break
             
             else:
