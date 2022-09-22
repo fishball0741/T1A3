@@ -7,7 +7,6 @@ from great_text import great_text
 
 def end_game():
     great_text("Game Over","red","colossal")
-
     print("Your health reach 0, Game Over!!! ")
     while True:
         user_input= input("Do you want to start a new game? 'yes' or 'no' ")
