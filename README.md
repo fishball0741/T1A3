@@ -66,7 +66,7 @@ Finally, as usual, I set the loop to prevent the invalid input (text or out of r
 
 ![Lose](docs/lose_feature.png)
 
-The final feature is called Lose Game, which is for the character who has lose the game
+The final feature is called Lose Game, which is for the character who has lose the game. So it will have the output to print the Game-Over sentence and some colorful text from the 3rd party module. After that, it will ask the user to input 'Yes' or 'No' to decide to restart the game or exit. If the user input 'Yes' then it will direct to the main.py for restarting the game from the beginning. If the user input 'No' then it will exit the game. At the end, I set the loop to prevent the invalid input and it will ask the user to input again if happened.
 
 ### R.8. A set of instructions to install the application
 
