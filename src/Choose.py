@@ -3,6 +3,7 @@ from great_text import great_text
 
 
 # def 2 character for user to choose, and thier traits
+
 def choose_character():
     
     while True:
