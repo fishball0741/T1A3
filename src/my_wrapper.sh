@@ -4,8 +4,8 @@ a=$(python3 --version)
 if  [[ "$a" > 3 ]]
 then
     echo python "$a" is installed running the application...
-    python3 -m venv .venv
-    source .venv/bin/activate
+    python3 -m venv env
+    source env/bin/activate
     pip3 install -r requirements.txt
     python3 main.py "$@"
 else
