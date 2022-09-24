@@ -12,7 +12,7 @@ This is my Termainal Application Repo below.
 
 Press the Greed Color 'Code' Button or:
 Copy this link below:
-```(git@github.com:fishball0741/T1A3.git)```
+```git@github.com:fishball0741/T1A3.git```
 And then go to your terminal
 
 ![clone](../docs/clone.png)
