@@ -1,6 +1,12 @@
 import Choose
 import battle
 import zombie
+import argparse
+from sys import argv
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--gender',  choices=['m', 'f'], required=False)
+args = parser.parse_args()
 
 
 def main():
@@ -11,7 +17,7 @@ def main():
     lv4_boss = zombie.Character('Tank', health=350, attack=30)
     
     # execute the character chose, save
-    user = Choose.choose_character()
+    user = Choose.choose_character(args.gender)
 
     if user.score >= 0:
         battle.game(lv1_boss, user)

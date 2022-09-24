@@ -1,13 +1,18 @@
-import zombie
 from great_text import great_text
+import zombie
 
 
 # def 2 character for user to choose, and thier traits
 
-def choose_character():
-    
-    while True:
+def choose_character(genderArg):
+    if genderArg:
+        if genderArg == "f":
+            gender = 'female'
+        else:
+            gender = 'male'
+    else:
         gender = input("Please select your character, 'male' or 'female'? ")
+    while True:
         name = input("Please write down your character's name: ")
     
         if gender == 'male':

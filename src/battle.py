@@ -1,8 +1,9 @@
 import random
+from great_text import great_text
 import zombie
 import main
 import item
-from great_text import great_text
+
 
 
 def end_game():

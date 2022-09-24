@@ -8,8 +8,8 @@ This is my Termainal Application Repo below.
 ## How to install and execute:
 
 ---
-Install
+Install Guide:
 
-You can use pip to install your package and verify that it works. Create a virtual environment and install your package from PyPI:
-Make sure you are in venv  (source .venv/bin/actiavate) to get in to venv.
-Then you can install the app.
+
+
+
