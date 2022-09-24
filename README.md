@@ -2,7 +2,7 @@
 
 ## Presentation Link >
 
-<>
+<https://youtu.be/DHqj_7sokmQ>
 
 ### R.3. References Source
 
@@ -13,9 +13,6 @@ Moreover, I used the third party module which called great_text which can print 
 ### R.4. Source Control Repository >
 
 <https://github.com/fishball0741/T1A3>
-
-### R.5. Identify any code style guide or styling
-
 
 
 ### R.6. Develop and Describe THREE Features
